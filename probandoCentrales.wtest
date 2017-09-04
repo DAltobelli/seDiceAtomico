@@ -1,0 +1,19 @@
+import centralBurns.*
+import springfield.*
+import centralExBosque.*
+import centralEolica.*
+
+test "burns con 10 varillas produce 1 Mkwh en springfield" {
+
+	assert.equals(1,centralBurns.produccionEnergetica())
+	}
+
+test "exBosque con una capacidad de 20 toneladas produce 18.5 Mkwh en springfield"{
+	assert.equals(18.5,centralExBosque.produccionEnergetica())
+}	
+
+test "elSuspiro produce 2 Mkwh en springfield"{
+	assert.equals(2,centralEolica.produccionEnergetica())
+}
+
+

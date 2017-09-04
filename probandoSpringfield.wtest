@@ -1,0 +1,18 @@
+import springfield.*
+import centralExBosque.*
+
+test ", las centrales contamintantes de sprinfield
+	 es una colección que adentro tiene sólo a exBosque"{
+	 assert.equals({centralExBosque},springfield.centralesContaminantes())
+	 }
+
+test "la central mas productora de springfield es exBosque"{
+	assert.equals({centralExBosque},springfield.energiaQueMasProduce())
+}
+test " springfield cubrió su necesidad energética si ésta era de 20 Mkwh"{
+	assert.that(springfield.cubrioNecesidadesSuministro())
+}
+test "springfield está al horno si posee una necesidad energética de 30 Mkwh."{
+	springfield.necesidadEnergetica(30)
+	assert.that(springfield.estaEnElHorno())
+}

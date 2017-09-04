@@ -1,0 +1,7 @@
+import albuquerque.*
+import centralHidroelectrica.*
+
+
+test "la central mas productora de albuquerque es centralHidroelectrica"{
+	assert.equals({centralHidroelectrica},albuquerque.energiaQueMasProduce())
+}
